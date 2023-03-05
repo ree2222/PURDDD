@@ -1,3 +1,96 @@
+
+script_key="vhlAnKDKjKzvtIVkqSatsfjsCcuvOukO";
+getgenv(purd).Settings = {
+    Silent = {
+        SilentToggle = "p",
+        Enabled = true,
+        AimPart = "HumanoidRootPart",
+        Prediction = 0.1224,
+        ClosestPart = true,
+        HitChance = 100,
+        AntiGroundshot = true,
+        PredictMovement = true,
+        UseAirPart = true,
+        AirPart = "HumanoidRootPart"
+    },
+    FOV = {
+        Visible = false,
+        Radius = 65,
+        Filled = false,
+    },
+    Checks = {
+        WallCheck = true,
+        UnlockedOnDeath = true,
+        CrewCheck = false,
+    },
+    AutoGunFov = {
+        ["Enabled"] = (false), -- // Gun Fov 
+        ["Double-Barrel SG"] = {["FOV"] = 34}, -- // Db
+        ["Revolver"] = {["FOV"] = 65}, -- // Rev
+        ["SMG"] = {["FOV"] = 23}, -- // Smg
+        ["Shotgun"] = {["FOV"] = 20}, -- // Shotgun
+        ["Rifle"] = {["FOV"] = 26}, -- // Rifle
+        ["TacticalShotgun"] = {["FOV"] = 430}, -- // Rev
+        ["Silencer"] = {["FOV"] = 170}, -- // Smg
+        ["AK47"] = {["FOV"] = 130}, -- // Shotgun
+        ["P90"] = {["FOV"] = 120}, -- // Rifle
+        ["Glock"] = {["FOV"] = 120}, -- // Rifle
+        ["RPG"] = {["FOV"] = 120}, --// Rpg 
+        ["AR"] = {["FOV"] = 120} 
+    },
+    AimAssist = {
+        Enable = true,
+        ToggleKey = true,
+        UseKeyBoardKey = true,
+        KeyBoardKey = Enum.KeyCode.Q,
+        ThirdPerson = true,
+        FirstPerson = true,
+        AutoPingSets = true,
+        UseCircleRadius = false,
+        DisableOutSideCircle = false,
+        UseShake = true,
+        ShakePower = 100,
+        CheckForWalls = true,
+    },
+    Check = {
+        CheckIfKo = true,
+        DisableOnPlayerDeath = true,
+    },
+    Prediction = {
+        PredictMovement = true,
+        PredictionVelocity = 0.033,
+    },
+    Smooth = {
+        Smoothness = true,
+        SmoothnessAmount = 0.033,
+    },
+    Part = {
+        AimPart = "Head",
+        CheckIfJumpedAimPart = "UpperTorso",
+        CheckIfJumped = true,
+        GetClosestPart = true,
+    },
+    Resolver = {---- this is for camlock
+        UnderGround = true,
+        DetectDesync = true,
+    },
+    Visual = {
+        Fov = false,
+        FovTransparency = 3,
+        FovThickness = 3,
+        FovColor = Color3.fromRGB(67, 121, 145),
+        FovRadius = 100,
+    },
+    Spoofer = {
+        MemorySpoofer = true,
+        MemoryTabColor = Color3.fromRGB(67, 101, 252),
+        MemoryMost = 85000,
+        MemoryLeast = 80000,
+        
+  
+    },
+    }
+
   if not LPH_OBFUSCATED then
     LPH_NO_VIRTUALIZE = function(...)
         return (...)
